@@ -41,13 +41,47 @@
             height: 3px;
             background-color: black;
             width: 100%;
-        }
+        } 
 
     </style>
+    <!-- <script>
+        window.addEventListener("load", function(){
+            document.getElementById("animationAllbtn").addEventListener('click', function(){
+              alert("클릭했어")
+            })
+        })
+    </script> -->
 </head>
 <body>
     <button><div id="animationAllbtn">
         <span></span>
     </button>
+    <script>
+        // 화면의 아이디가 animationAllbtn 객체를 클릭하면 경고창 떠라
+        // document.body
+        // document.head
+        // 화면의 아이디가 animationAllbtn 객체 명령 받아라
+        document.getElementById("animationAllbtn").addEventListener('click', function(){
+            document.getElementById("animationAllbtn").classList.add("show");
+            document.body.classList = "show action popup";
+       })
+
+
+
+
+
+       // 아이디가 gnb 객체를 클릭하면 경고장 나 혼자만 자바스크립트 나오도록 한다.
+    //    document.getElementById("gnb").addEventListener('click', function(){
+    //     alert("나 혼자만 자바스크립트")
+    //    })
+
+    // 아이디가 allmenu를 클릭하면
+    // 아이디가 gnb에게 나타난다.
+    document.getElementById("allmenu").addEventListener('click', function(){
+        document.getElementById("gnb").style.display = "block";
+        //아이디가 close에게 배경색을 빨강을 처리
+        document.getElementById("close").style.backgroundColor = "red";
+        })
+    </script>
 </body>
 </html>

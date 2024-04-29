@@ -41,6 +41,11 @@
             height: 3px;
             background-color: black;
             width: 100%;
+            transition: 0.5s;
+        }
+        #animationAllbtn.show span{
+            width: 0;
+            
         } 
 
     </style>
@@ -63,7 +68,7 @@
         // 화면의 아이디가 animationAllbtn 객체 명령 받아라
         document.getElementById("animationAllbtn").addEventListener('click', function(){
             document.getElementById("animationAllbtn").classList.add("show");
-            document.body.classList = "show action popup";
+            // document.body.classList = "show action popup";
        })
 
 
@@ -77,11 +82,11 @@
 
     // 아이디가 allmenu를 클릭하면
     // 아이디가 gnb에게 나타난다.
-    document.getElementById("allmenu").addEventListener('click', function(){
-        document.getElementById("gnb").style.display = "block";
-        //아이디가 close에게 배경색을 빨강을 처리
-        document.getElementById("close").style.backgroundColor = "red";
-        })
+    // document.getElementById("allmenu").addEventListener('click', function(){
+    //     document.getElementById("gnb").style.display = "block";
+    //     아이디가 close에게 배경색을 빨강을 처리
+    //     document.getElementById("close").style.backgroundColor = "red";
+    //     })
     </script>
 </body>
 </html>

@@ -13,6 +13,12 @@
         .text-red{
             color: red !important;
         }
+        .text-yellow{
+            color: yellow !important;
+        }
+        .text-green{
+            color: green !important;
+        }
         
     </style>
 </head>
@@ -21,9 +27,16 @@
     <!-- bi-x-lg -->
     <script>
         const allbtn = document.getElementById("allbtn");
+        let status = true;
         allbtn.addEventListener("click", function(){
-            allbtn.classList.toggle("bi-x-lg");
-        });
+            if(status){
+                allbtn.classList = "bi bi-list fs-1 bi-x-lg text-red";
+                status = false;
+            } else {
+                allbtn.classList = "bi bi-list fs-1";
+                status = true;
+            }
+        })
     </script>
 </body>
 </html>
